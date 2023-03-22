@@ -75,20 +75,25 @@ public class Aplicacion {
                 for (int i = 0; i < matrizActual.length; i++) {
                         for (int j = 0; j < matrizActual[0].length; j++) {
                                 if(i != 0 && j != 0 && i != matrizActual.length - 1 && j != matrizActual[0].length - 1){
-                                        if(matrizActual[i + 1][j + 1] + matrizActual[i + 1][j] + matrizActual[i + 1][j - 1] + matrizActual[i][j + 1] + matrizActual[i][j - 1] + matrizActual[i - 1][j + 1] + matrizActual[i - 1][j] + matrizActual[i - 1][j - 1] == 3){
+                                        if(matrizActual[i + 1][j + 1] + matrizActual[i + 1][j] + matrizActual[i + 1][j - 1] + matrizActual[i][j + 1] + matrizActual[i][j - 1] + matrizActual[i - 1][j + 1] + matrizActual[i - 1][j] + matrizActual[i - 1][j - 1] == 2){
                                                 matrizActual[i][j] = 1;
                                                 bw2.write(matrizActual[i][j] + " ");
-                                                
-                    
                                         }else{ 
                                                 matrizActual[i][j] = 0;
-                                                bw2.write(matrizActual[i][j] + " ");
-                                                
-                    
+                                                bw2.write(matrizActual[i][j] + " ");               
                                         }
+                                        if(matrizActual[i + 1][j + 1] + matrizActual[i + 1][j] + matrizActual[i + 1][j - 1] + matrizActual[i][j + 1] + matrizActual[i][j - 1] + matrizActual[i - 1][j + 1] + matrizActual[i - 1][j] + matrizActual[i - 1][j - 1] == 3){
+                                            matrizActual[i][j] = 1;
+                                            bw2.write(matrizActual[i][j] + " ");
+                                    }else{ 
+                                            matrizActual[i][j] = 0;
+                                            bw2.write(matrizActual[i][j] + " ");               
+                                    }
+                                }else{
+                                    bw2.newLine();
                                 }
                         }
-                        bw2.newLine();
+                        
                 }
                 for (int i = 0; i < matrizActual.length; i++) {
                     for (int j = 0; j < matrizActual[i].length; j++) {
