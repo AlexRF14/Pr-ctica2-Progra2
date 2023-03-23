@@ -6,7 +6,7 @@ import java.io.*;
 public class Aplicacion { 
         
             public void crearMatrizyMostrar() { {
-                int[][] matriz = new int[31][31];
+                int[][] matriz = new int[32][32];
         
                 try (FileWriter fw = new FileWriter("C:/Users/Usuario/Desktop/Programacion_2/Practica2_Progra2/src/principal/matriz.txt");
                      BufferedWriter bw = new BufferedWriter(fw)) {          
@@ -66,6 +66,10 @@ public class Aplicacion {
             }
             
             
+        
+        /** 
+         * @param matrizActual
+         */
         public void siguienteFase(int[][] matrizActual) {
                 
 

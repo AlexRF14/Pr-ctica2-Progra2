@@ -5,6 +5,10 @@ import java.util.*;
 
 public class Principal {
     
+        
+        /** 
+         * @param args
+         */
         public static void main(String[] args) {
             // Leemos la matriz desde el archivo
             int[][] matriz = leerMatrizDesdeArchivo("C:/Users/Usuario/Desktop/Programacion_2/Practica2_Progra2/src/principal/matriz.txt");
@@ -20,6 +24,11 @@ public class Principal {
         }
         }
         
+        
+        /** 
+         * @param nombreArchivo
+         * @return int[][]
+         */
         public static int[][] leerMatrizDesdeArchivo(String nombreArchivo){
             try (FileReader fr = new FileReader(nombreArchivo);
                          BufferedReader br = new BufferedReader(fr)) {    
